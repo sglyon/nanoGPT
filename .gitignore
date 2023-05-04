@@ -2,3 +2,7 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+out-quantecon-finetune/ckpt.pt
+out-quantecon-fresh
+data/quantecon/train.bin
+data/quantecon/val.bin
