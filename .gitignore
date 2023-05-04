@@ -6,3 +6,4 @@ out-quantecon-finetune/ckpt.pt
 out-quantecon-fresh
 data/quantecon/train.bin
 data/quantecon/val.bin
+data/quantecon/all_lecture_series.md

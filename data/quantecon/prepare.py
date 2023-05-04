@@ -1,8 +1,15 @@
 import os
 import tiktoken
 import numpy as np
+import requests
 
-input_file_path = os.path.join(os.path.dirname(__file__), 'qe-py.md')
+input_file_path = os.path.join(os.path.dirname(__file__), 'all_lecture_series.md')
+
+if not os.path.exists(input_file_path):
+    data_url = 'https://compsosci-resources.s3.amazonaws.com/all_lecture_series.md'
+    with open(input_file_path, 'w') as f:
+        f.write(requests.get(data_url).text)
+
 
 with open(input_file_path, 'r') as f:
     data = f.read()
